@@ -1,9 +1,9 @@
 ﻿// Requrst for input data
 Console.WriteLine("Enter the number");
-string number = Console.ReadLine() ?? "";
+string num = Console.ReadLine() ?? "";
 
 // Processing of input data
-int a = int.Parse(number);
+int a = int.Parse(num);
 int b = 1;
 // Decision
 while (b < a)
