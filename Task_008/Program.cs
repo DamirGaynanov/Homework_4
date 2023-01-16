@@ -6,7 +6,7 @@ string num = Console.ReadLine() ?? "";
 int a = int.Parse(num);
 int b = 1;
 // Decision
-while (b < a)
+while (b <= a)
 {
     if (b < a)
     {
