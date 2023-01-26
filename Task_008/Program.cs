@@ -1,4 +1,9 @@
-﻿// Requrst for input data
+﻿// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+// Requrst for input data
 Console.WriteLine("Enter the number");
 string num = Console.ReadLine() ?? "";
 
