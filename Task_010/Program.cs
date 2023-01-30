@@ -5,13 +5,12 @@
 // 782 -> 8
 // 918 -> 1
 
-// Requrst for input data
 Console.WriteLine("Введите трёхзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int secondDigit = SecondDigit(number);
 Console.WriteLine($"{number} -> {secondDigit}");
 
-// Метод
+// Method
 int SecondDigit(int num)
 {
     return ((num % 100) / 10);
