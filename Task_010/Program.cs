@@ -8,8 +8,10 @@
 Console.WriteLine("Введите трёхзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int secondDigit = SecondDigit(number);
-Console.WriteLine($"{number} -> {secondDigit}");
+Console.WriteLine(number > 99 && number < 1000 ? ($"{number} -> {secondDigit}") : "Число не трёхзначное");
 
+
+// Console.WriteLine($"{number} -> {secondDigit}");
 // Method
 int SecondDigit(int num)
 {
