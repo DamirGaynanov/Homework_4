@@ -11,6 +11,12 @@ Console.WriteLine(number > 100 ? $"{number} -> {thirsDigit}" : $"{number} -> Ñ‚Ñ
 // Method
 int ThirdDigit(int num)
 {
-    return (num % 10);
+    int result = -1;
+    while (num > 999)
+    {
+        num = num / 10;
+    }
+    result = num % 10;
+    return (result);
 }
 
