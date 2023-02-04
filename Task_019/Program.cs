@@ -8,12 +8,6 @@ int number = Convert.ToInt32(Console.ReadLine());
 bool polindrome = Polindrome(number);
 Console.WriteLine(polindrome ? $"{number} -> Да" : $"{number} -> Нет");
 
-// Console.WriteLine(number / 10000);
-// Console.WriteLine(number / 1000 - (number /10000) *10);
-// Console.WriteLine(number % 100 -(number % 10));
-// Console.WriteLine(number % 10);
-
-// Метод
 bool Polindrome(int num)
 {
     int digit1 = num / 10000;
