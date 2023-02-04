@@ -17,18 +17,3 @@ bool DayOff(int num)
 {
     return (num == 6 || num == 7);
 }
-
-
-
-// bool DayOff(int num)
-// {
-//     return(num == 6 || num == 7);
-// }
-
-// bool dayOff = DayOff(number);
-// Console.WriteLine(number > 7 || number < 1 ? Console.WriteLine(dayOff ? "Да": "Нет") : "Некорректный ввод. Введите число от 1 до 7");
-
-// bool DayOff(int num)
-// {
-//     return(num == 6 || num == 7);
-// }

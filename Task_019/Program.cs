@@ -3,6 +3,7 @@
 // 14212 -> нет
 // 12821 -> да
 // 23432 -> да
+
 Console.WriteLine("Ввкдите пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 bool polindrome = Polindrome(number);

@@ -18,7 +18,6 @@ double by = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату точки B по оси Z: ");
 double bz = Convert.ToInt32(Console.ReadLine());
 
-
 double distance = Distance (ax, ay, az, bx, by, bz);
 Console.WriteLine($"A ({ax}, {ay}, {az}); B ({bx}, {by}, {bz}) -> {Math.Round(distance, 2, MidpointRounding.ToZero)}");
 
