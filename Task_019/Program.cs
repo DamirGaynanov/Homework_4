@@ -6,14 +6,22 @@
 
 Console.WriteLine("Ввкдите пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
-bool polindrome = Polindrome(number);
-Console.WriteLine(polindrome ? $"{number} -> Да" : $"{number} -> Нет");
+if (number > 100000 | number < 10000)
+{
+    Console.WriteLine("Введено некорректное число. Введите пятизначное число");
+}
+else
+{
+    bool polindrome = Polindrome(number);
+    Console.WriteLine(polindrome ? $"{number} -> Да" : $"{number} -> Нет");
+}
+
 
 bool Polindrome(int num)
 {
     int digit1 = num / 10000;
-    int digit2 = num / 1000 - (num /10000) *10;
-    int digit4 = (num % 100 - (num % 10))/10;
+    int digit2 = num / 1000 - (num / 10000) * 10;
+    int digit4 = (num % 100 - (num % 10)) / 10;
     int digit5 = num % 10;
     return ((digit1 == digit5) && (digit2 == digit4));
 }
