@@ -25,3 +25,15 @@ bool Polindrome(int num)
     int digit5 = num % 10;
     return ((digit1 == digit5) && (digit2 == digit4));
 }
+
+// Альтернативное решение
+
+// int number = int.Parse(Console.ReadLine());
+// int pal = 0;
+// int num = number;
+// while (number > 0)
+// {
+// pal = pal * 10 + number % 10;
+// number /= 10;
+// }
+// Console.WriteLine(num == pal ? "палиндром" : "не палиндром");
