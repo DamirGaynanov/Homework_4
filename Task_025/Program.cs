@@ -10,7 +10,7 @@ double number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
 double number2 = Convert.ToInt32(Console.ReadLine());
 double degree = Degree(number1, number2);
-Console.WriteLine($"3^5 = {degree}");
+Console.WriteLine($"{number1}^{number2} = {degree}");
 
 // Метод
 double Degree(double num1, double num2)
