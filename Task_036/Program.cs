@@ -6,7 +6,7 @@
 
 // [-4, -6, 89, 6] -> 0
 
-int[] array = CreateArrayRndInt(5, 1, 3);
+int[] array = CreateArrayRndInt(5, -100, 100);
 PrintArray(array);
 Console.WriteLine($" -> {SumNum(array)}");
 
@@ -28,7 +28,6 @@ void PrintArray(int[] arr)
         {
             if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
             else Console.Write($"{arr[i]}");
-            Console.Write($"{arr[i]}");
         }
         
     Console.Write("]");
@@ -37,11 +36,11 @@ void PrintArray(int[] arr)
 int SumNum(int[] arr)
 {
     int sum = 0;
-    int i = 0;
-    while (i < arr.Length)
+    int j = 1;
+    while (j < arr.Length)
     {
-        sum = sum + arr[i];
-        i = i+2;
+        sum = sum + arr[j];
+        j = j+2;
     }
     return sum;
 }
