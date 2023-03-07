@@ -8,6 +8,7 @@
 
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+Console.Write($"{number} -> ");
 NaturalNumber(number);
 
 void NaturalNumber(int num)
